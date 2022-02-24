@@ -4,73 +4,73 @@ function loadEvent(){
 
     const days2022 = [
         {
-            name: "January",
+            name: "january",
             number: 1,
             days: 31
         },
 
         {
-            name: "February",
+            name: "february",
             number: 2,
             days: 28
         },
 
         {
-            name: "March",
+            name: "march",
             number: 3,
             days: 31
         },
 
         {
-            name: "April",
+            name: "april",
             number: 4,
             days: 30
         },
 
         {
-            name: "May",
+            name: "may",
             number: 5,
             days: 31
         },
 
         {
-            name: "June",
+            name: "june",
             number: 6,
             days: 30
         },
 
         {
-            name: "July",
+            name: "july",
             number: 7,
             days: 31
         },
 
         {
-            name: "August",
+            name: "august",
             number: 8,
             days: 31
         },
 
         {
-            name: "September",
+            name: "september",
             number: 9,
             days: 30
         },
 
         {
-            name: "October",
+            name: "october",
             number: 10,
             days: 31
         },
 
         {
-            name: "November",
+            name: "november",
             number: 11,
             days: 30
         },
 
         {
-            name: "December",
+            name: "december",
             number: 12,
             days: 31
         }
@@ -94,7 +94,7 @@ function loadEvent(){
             days += `
             <div class="card">
                 <time datetime="2022">2022</time>
-                <time datetime="${twoDigitsMonthNumber}">${twoDigitsMonthNumber}</time>
+                <time datetime="${twoDigitsMonthNumber}">${month.name}</time>
                 <time datetime="${twoDigitsDayNumber}">${twoDigitsDayNumber}</time>
             </div>
             `
