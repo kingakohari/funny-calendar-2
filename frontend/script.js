@@ -98,7 +98,6 @@ function loadEvent(){
                 <time datetime="${twoDigitsDayNumber}">${twoDigitsDayNumber}</time>
             </div>
             `
-            
         }
     
         console.log(days);
