@@ -42,6 +42,7 @@
     max-width: 1920px;
     align-items: center;
     justify-content: center;
+    font-family: 'Luckiest Guy', cursive;
     background-image: url(https://cutewallpaper.org/21/light-blue-and-white-background/Blue-and-white-brush-stroke-textured-background-free-image-.jpg);
     background-position: center;
     background-size: contain;
@@ -66,7 +67,7 @@
     background-image: url(https://cdn.dribbble.com/users/6786342/screenshots/15624218/media/6c6c55cd71e1af688df2395b9979742f.png);
     background-position: center;
     background-size: cover;
-    color: rgb(5, 5, 56);
+    color:rgb(209, 232, 245);
     font-weight: 800;
 }
 
@@ -83,7 +84,7 @@
     height: 200px;
     width: 200px;
     padding: 20px 40px;
-    font-family: Montserrat, "sans-serif";
+    border-radius: 200px;
     font-size: 20px;
 }
 
@@ -99,10 +100,8 @@
 #february div {
     padding-top: 20px;
     position: relative;
-    font-size: 1rem;
-    font-family: 'Abril Fatface', sans-serif;
+    letter-spacing: 0.5em;
     font-size: 10px;
-    color:#fff 
 }
 
 #march {
@@ -134,7 +133,6 @@
     align-items: flex-end;
     justify-content: flex-start;
     border: 1px solid rgba(0, 0, 0, 0.116);
-    color: #fff;
 }
 
 #may {
@@ -145,9 +143,7 @@
 }
 
 #may div {
-    font-family: Montserrat, "sans-serif";
     font-weight: 600;
-    color: rgb(5, 5, 56);
 }
 
 #june {
@@ -164,8 +160,6 @@
     text-align: center;
     padding-top: 5%;
     font-size: 80px;
-    font-family: 'Luckiest Guy', cursive;
-    color: #fff
 }
 
 #july,
@@ -189,7 +183,6 @@
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    font-family: 'IM Fell English SC', serif;
     color:rgb(62, 62, 224)
 }
 
@@ -206,9 +199,8 @@
     justify-content: stretch;
     align-items: center;
     padding: 50px;
+    border-radius: 200px;
     font-size: 15px;
-    font-family: 'IM Fell English SC', serif;
-    color:#fff
 }
 
 #september {
@@ -238,11 +230,9 @@
     width: 150px;
     height: 200px;
     margin: 10px 0 0 1%;
-    background-color: #fff;
     border: 1px solid #ccc;
     flex-grow: 1;
     outline: 2px solid blue;
-    font-family: 'Fahkwang', sans-serif;
 }
 
 #november {
@@ -256,7 +246,6 @@
     margin: 2px;
     height: 50px;
     border-radius: 100px;
-    font-family: 'Abril Fatface', sans-serif;
 }
 
 #december {
@@ -271,6 +260,5 @@
        border: solid 1px;
        width: 200px;
        height: 50px; 
-       color:#fff
     }
 }
