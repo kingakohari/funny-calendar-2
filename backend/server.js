@@ -35,7 +35,7 @@ const server = http.createServer((req, res) => {
 		<title>Not here</title>
 	</head>
 	<body>
-		<div id="root">Rise your gaze to the sky<br/>than a bit back to the URL bar<br/>and check that link again</div>
+		<div id="root">Have a<br/>great<br/>day!</div>
 	</body>
 	</html>
 	

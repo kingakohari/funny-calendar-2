@@ -1,41 +1,41 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: none;
-    box-sizing: border-box;
-    background: transparent;
-    font-family: inherit;
-    }
+margin: 0;
+padding: 0;
+border: 0;
+outline: none;
+box-sizing: border-box;
+background: transparent;
+font-family: inherit;
+}
 
-  a {
-    text-decoration: none;
-    }
+a {
+text-decoration: none;
+}
 
-  a img {
-    border: none;
-    }
-    
-  button,
-  a {
-    cursor: pointer;
-    color: inherit;
-    }
-    
-  textarea {
-    resize: none;
-    }
-    
-  button,
-  textarea,
-  select {
-    appearance: none !important;
-    border-radius: 0;
-    }
-  
-  /*End of CSS reset*/
+a img {
+border: none;
+}
 
-  #root {
+button,
+a {
+cursor: pointer;
+color: inherit;
+}
+
+textarea {
+resize: none;
+}
+
+button,
+textarea,
+select {
+appearance: none !important;
+border-radius: 0;
+}
+
+/*End of CSS reset*/
+
+#root {
     width: 100%;
     margin: 0 auto;
     padding-left: 5%;
@@ -46,7 +46,7 @@
     background-image: url(https://cutewallpaper.org/21/light-blue-and-white-background/Blue-and-white-brush-stroke-textured-background-free-image-.jpg);
     background-position: center;
     background-size: contain;
-  }
+}
 
 #january,
 #february,
@@ -58,9 +58,9 @@
 }
 
 
-/* -------------------everyday image setup------------------- */
+    /* -------------------everyday image setup------------------- */
 
-#root div {
+#root .card {
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -69,9 +69,9 @@
     background-size: cover;
     color:rgb(209, 232, 245);
     font-weight: 800;
-}
+    }
 
-/* -------------------end of everyday image setup------------------- */
+    /* -------------------end of everyday image setup------------------- */
 
 #january {
     grid-template-columns: repeat(7, 1fr);
@@ -80,7 +80,7 @@
     box-sizing: border-box;    
 }
 
-#january div {
+#january .card {
     height: 200px;
     width: 200px;
     padding: 20px 40px;
@@ -97,7 +97,7 @@
     grid-template-rows: repeat(12, 100px [row-start]);
 }
 
-#february div {
+#february .card {
     padding-top: 20px;
     position: relative;
     letter-spacing: 0.5em;
@@ -106,20 +106,20 @@
 
 #march {
     grid-template-columns: repeat(3, 1fr);
-	grid-gap: 1%;
-	position: relative;
-	padding: 0 2rem;
-	margin: 2rem auto 0;
-	max-width: 70rem;
+    grid-gap: 1%;
+    position: relative;
+    padding: 0 2rem;
+    margin: 2rem auto 0;
+    max-width: 70rem;
 }
 
-#march div {
-	width: 100%;
-	height: 100%;
-	min-width: 4rem;
-	border-radius: 3px;
-	box-shadow: inset -7px 0 9px -7px rgba(0, 0, 0, 0.4),
-		inset 0 -7px 9px -7px rgba(0, 0, 0, 0.4);
+#march .card {
+    width: 100%;
+    height: 100%;
+    min-width: 4rem;
+    border-radius: 3px;
+    box-shadow: inset -7px 0 9px -7px rgba(0, 0, 0, 0.4),
+        inset 0 -7px 9px -7px rgba(0, 0, 0, 0.4);
 }
 
 #april {
@@ -129,7 +129,7 @@
     margin-top: 100px;
 }
 
-#april div {
+#april .card {
     align-items: flex-end;
     justify-content: flex-start;
     border: 1px solid rgba(0, 0, 0, 0.116);
@@ -142,7 +142,7 @@
     height: 100vh;   
 }
 
-#may div {
+#may .card {
     font-weight: 600;
 }
 
@@ -154,7 +154,7 @@
     gap: 10px;
 }
 
-#june div {
+#june .card {
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -174,16 +174,15 @@
     flex-wrap: wrap;
     width: 100%;
     height: 100vh;
-    flex-direction: row;
+    flex-direction: column;
     padding-top: 10px;
     gap: 20px
 }
 
-#july div {
+#july .card {
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    color:rgb(62, 62, 224)
 }
 
 #august {
@@ -195,7 +194,7 @@
     gap: 50px
 }
 
-#august div {
+#august .card {
     justify-content: stretch;
     align-items: center;
     padding: 50px;
@@ -208,7 +207,7 @@
     margin-top: 95%;
 }
 
-#september div {
+#september .card {
     flex: 1 1 25%;
     padding: 5px; 
     box-sizing: border-box;
@@ -225,7 +224,7 @@
     position: relative;
 }
 
-#october div {
+#october .card {
     padding: 20px;
     width: 150px;
     height: 200px;
@@ -240,12 +239,11 @@
     flex-wrap: wrap;
 }
 
-#november div {
-    flex: 2 1 50px;
-    flex-basis: 20%;
-    margin: 2px;
-    height: 50px;
-    border-radius: 100px;
+#november .card {
+    flex: 0.5 100px;
+    margin: 30px;
+    padding: 5px;
+    height: 100px;
 }
 
 #december {
@@ -255,7 +253,7 @@
 
 @media screen and (min-width: 600px) {
 
-    #december div {
+    #december .card {
        display: inline-block;
        border: solid 1px;
        width: 200px;
