@@ -14,28 +14,51 @@ const server = http.createServer((req, res) => {
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="preconnect" href="https://fonts.googleapis.com"> 
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
 		<style>
 			body{
-				padding: 0; margin: 0;
-				font-family: 'Montserrat', sans-serif;
-				font-weight: 800;
-				background-color: #4343F9;
-				color: #fff;
+				background-color: #fff
 			}
+
 			#root{
+				display: flex;
 				width: 100%;
 				height: 100vh;
-				display: flex;
+				text-align: center;
+				align-items: center;
+				justify-content: center
+			}
+
+			button {
+				width: 400px;
+				height: 400px;
 				justify-content: center;
 				align-items: center;
-				font-size: 21px;
+				display: inline-block;
+				text-align: center;
+				margin: 0 auto;
+				margin-left: 50%;
+				padding: 0; 
+				border: 1px;
+				border-radius: 400px;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+				vertical-align: middle;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 800;
+				font-size: 50px;
+				color: #fff;
+				background-color: #4343F9;
 			}
+
 		</style>
-		<title>Not here</title>
+		<title>Oh a happy day</title>
 	</head>
 	<body>
-		<div id="root">Have a<br/>great<br/>day!</div>
+		<div id="root">
+			<button>Have a<br>great<br>day!</button>
+		</div>
 	</body>
 	</html>
 	
