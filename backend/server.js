@@ -45,9 +45,9 @@ const server = http.createServer((req, res) => {
 				top: 50%;
 				transform: translate(-50%,-50%);
 				vertical-align: middle;
-				font-family: 'Montserrat', sans-serif;
+				font-family: 'Luckiest Guy', cursive;
 				font-weight: 800;
-				font-size: 50px;
+				font-size: 60px;
 				color: #fff;
 				background-color: #4343F9;
 			}
