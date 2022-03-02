@@ -71,6 +71,10 @@ border-radius: 0;
     font-weight: 800;
     }
 
+#root .card-btn {
+    text-shadow: rgb(10, 10, 10) 1px 0 10px;
+}    
+
     /* -------------------end of everyday image setup------------------- */
 
 #january {

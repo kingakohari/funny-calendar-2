@@ -92,11 +92,12 @@ function loadEvent(){
             let twoDigitsDayNumber = i.toString().padStart(2, "0")
 
             days += `
-            <a href=”link”><div class="card theButton">
+            <div class="card">
                 <time datetime="2022">2022</time>
                 <time datetime="${twoDigitsMonthNumber}">${month.name}</time>
-                <time datetime="${twoDigitsDayNumber}">${twoDigitsDayNumber}</time>
-            </div></a>
+                <time datetime="${twoDigitsDayNumber}">${twoDigitsDayNumber}</time><br>
+                <button class="card-btn">Click me</button>
+            </div>
             `
         }
     
@@ -107,6 +108,16 @@ function loadEvent(){
         `
         rootElement.insertAdjacentHTML("beforeend", monthSection)
     }
+
+    function clickEvent(event) {
+ 
+         if (event.target.classList.contains("card-btn")) {
+            
+             event.target.innerHTML = "Have a great day!"
+        }
+    }
+ 
+     document.addEventListener("click", clickEvent)
 }
 
 window.addEventListener("load", loadEvent);
